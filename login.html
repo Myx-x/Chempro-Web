@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chempro</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chempro">
+    <meta name="keywords" content="Chempro">
+    <meta name="author" content="MK">
+        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2deb3c3ae0.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./stylesheets/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    
+    </head>
+
+<body>
+    <div class="container-fluid padding">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4" id="box">
+
+                <form class="card form-container" action="CAMCAM" method="POST">
+                    <div class="text-center">
+                        <h3>Sign up 
+                            <i class="far fa-user"></i></h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label><sp class="red">*</sp> Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><sp class="red">*</sp> Username/NIM</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username/NIM" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><sp class="red">*</sp> Password</label>
+                        <input type="password" class="form-control" name="password" minlength="6" placeholder="Password" required="">    
+                    </div>
+            
+                    <div class="form-group">
+                        <label><sp class="red">*</sp> Re-type Password</label>
+                        <input type="password" class="form-control" name="re-typepassword" minlength="6" placeholder="Re-type Password" required="">    
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input class="form-check-input" id="ceklis" type="checkbox" required="">
+                        <label class="form-check-label" for="ceklis">I agree to the <a href="CAMCAM">Terms and Conditions</a><sp class="red">*</sp> </label>
+                    </div>
+                    <div>
+                        <button class="btn btn-secondary btn-lg btn-block">Register</button>
+                    </div>
+                    
+                </form>
+                 </div>
+        </div>  
+    </div>
+    
+</body>
+</html>

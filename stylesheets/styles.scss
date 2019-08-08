@@ -27,6 +27,30 @@ $md:768px;
 $lg:992px;
 $xl:1140px;
 
+//-----------------------------------
+
+.card{
+    h3{
+        font-family:'Odin';
+    }
+}
+
+.red{
+    color: #E94B3E;
+}
+
+.form-group{
+    >label{
+        font-family: 'Nunito';
+    }
+}
+
+.form-container{
+
+    padding:3vw;
+}
+//-----------------------------------
+
 #maintitle{
     background-color:#fefefe;
 }

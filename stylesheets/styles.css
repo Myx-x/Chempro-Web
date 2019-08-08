@@ -5,6 +5,22 @@
   src: url("../fonts/odin.eot") format("embedded-opentype"), url("../fonts/odin.woff2") format("woff2"), url("../fonts/odin.woff") format("woff"), url("../fonts/odin.ttf") format("truetype"), url("../fonts/odin.svg#odin") format("svg");
 }
 
+.card h3 {
+  font-family: 'Odin';
+}
+
+.red {
+  color: #E94B3E;
+}
+
+.form-group > label {
+  font-family: 'Nunito';
+}
+
+.form-container {
+  padding: 3vw;
+}
+
 #maintitle {
   background-color: #fefefe;
 }
