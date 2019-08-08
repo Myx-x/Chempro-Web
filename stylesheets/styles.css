@@ -39,7 +39,14 @@
 }
 
 #chempro-navbar {
-  background-color: #e3ebff;
+  background-color: #e2e2e2;
+  font-family: 'Odin';
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.nav-item:hover {
+  background-color: #bbbbbb;
 }
 
 .nav-link {
