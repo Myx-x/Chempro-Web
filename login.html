@@ -21,12 +21,39 @@
     </head>
 
 <body>
-    <div class="container-fluid padding">
-     <div section>
-        <div class="row justify-content-center">
-            <div class="type" id="j">
-                <img src="images/j.png" alt="logo chempro" width="300" height="300">
+    <div class="container-fluid" id="login-page">
+        <div class="row justify-content-center" id="login-row">
+            <div class="col-12 col-sm-12-col-md-3 col-lg-3 col-xl-3 my-auto">
+                <img src="images/logo-2.png" id="login-logo" alt="logo chempro">
             </div>
+            <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
+                <form class="card form-container" action="CAMCAM" method="POST">
+                    <div class="text-center">
+                        <h3>Sign In 
+                            <i class="far fa-user"></i></h3>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><sp class="red">*</sp> Username/NIM</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username/NIM" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><sp class="red">*</sp> Password</label>
+                        <input type="password" class="form-control" id="password" minlength="6" placeholder="Password" required="">    
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input class="form-check-input" id="ceklis" type="checkbox" required="">
+                        <label class="form-check-label" for="ceklis">I agree to the <a href="CAMCAM">Terms and Conditions</a><sp class="red">*</sp> </label>
+                    </div>
+                    <div>
+                        <button class="btn btn-secondary btn-lg btn-block">Login</button>
+                    </div>
+                    
+                </form>
+            </div> 
+
             <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
                 <form class="card form-container" action="CAMCAM" method="POST">
                     <div class="text-center">
@@ -55,8 +82,7 @@
                     </div>
 
                     <script>
-                        var password = document.getElementById("password")
-                        , password2 = document.getElementById("password2");
+                        var password = document.getElementById("password"), password2 = document.getElementById("password2");
 
                         function validatePassword(){
                         if(password.value != password2.value) {
@@ -80,36 +106,8 @@
                     </div>
                     
                 </form>
-             </div>
-            
-            <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
-                <form class="card form-container" action="CAMCAM" method="POST">
-                    <div class="text-center">
-                        <h3>Sign In 
-                            <i class="far fa-user"></i></h3>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label><sp class="red">*</sp> Username/NIM</label>
-                        <input type="text" class="form-control" id="username" placeholder="Username/NIM" required="">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label><sp class="red">*</sp> Password</label>
-                        <input type="password" class="form-control" id="password" minlength="6" placeholder="Password" required="">    
-                    </div>
-
-                    <div class="form-group form-check">
-                        <input class="form-check-input" id="ceklis" type="checkbox" required="">
-                        <label class="form-check-label" for="ceklis">I agree to the <a href="CAMCAM">Terms and Conditions</a><sp class="red">*</sp> </label>
-                    </div>
-                    <div>
-                        <button class="btn btn-secondary btn-lg btn-block">Login</button>
-                    </div>
-                    
-                </form>
-            </div> 
             </div>
+            
         </div>
     </div>
     

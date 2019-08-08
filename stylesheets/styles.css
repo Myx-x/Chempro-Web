@@ -21,8 +21,21 @@
   padding: 3vw;
 }
 
-#j > img {
+#login-logo {
   max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#login-row {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+#login-page {
+  background-color: #ff00ff;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 #maintitle {
