@@ -19,6 +19,9 @@
 
 .form-container {
   padding: 3vw;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 
 #login-logo {
@@ -33,7 +36,10 @@
 }
 
 #login-page {
-  background-color: #ff00ff;
+  background: url("../images/login_page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   max-height: 100vh;
 }
@@ -68,6 +74,10 @@
 
 #information, #tests {
   background-color: #ECF0F1;
+}
+
+section {
+  min-height: 100vh;
 }
 
 .info-row > [class*='col-'] {
