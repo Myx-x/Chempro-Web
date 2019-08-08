@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Odin';
+    src: url('../fonts/odin.eot');
+    src: url('../fonts/odin.eot') format('embedded-opentype'),
+         url('../fonts/odin.woff2') format('woff2'),
+         url('../fonts/odin.woff') format('woff'),
+         url('../fonts/odin.ttf') format('truetype'),
+         url('../fonts/odin.svg#odin') format('svg');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap');
+
+@mixin drop-shadow($y, $x, $blur, $color, $inset: false){
+    @if $inset{
+        -webkit-box-shadow:inset $y $x $blur $color;
+        -moz-box-shadow:inset $y $x $blur $color;
+        box-shadow:inset $y $x $blur $color;
+    }@else{
+        -webkit-box-shadow:$y $x $blur $color;
+        -moz-box-shadow:$y $x $blur $color;
+        box-shadow:$y $x $blur $color;
+    }
+}
+
+$sm:576px;
+$md:768px;
+$lg:992px;
+$xl:1140px;
+
+#maintitle{
+    background-color:#fefefe;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+    background-color:#101010;
+}
+
+#navbar-logo{
+    width: 75px;
+    height:auto;
+}
+
+#chempro-navbar{
+    background-color: #e3ebff;
+}
+
+.nav-link{
+    color:#101010 !important;
+}
+
+#information, #tests
+{
+    background-color:#ECF0F1;
+}
+
+.info-row
+{
+    //padding:10px 0;
+    >[class*='col-']{
+        @include drop-shadow(3px,3px,4px, rgba(0,0,0,0.3));
+        //margin:10px 20px;
+        padding:4vw;
+        background-color:#ffffff;
+        border-radius:20px;
+        h3{
+            color:#2F3F4F;
+            font-family: 'Odin';
+            margin-bottom:.25rem;
+        }
+        img{
+            border-radius:20px;
+        }
+        h6{
+            color:#898989;
+            font-family:'Nunito';
+            font-weight:600;
+        }
+        .see-more{
+            span{
+                font-family:'Odin';
+            }
+            i{
+                font-size:1.2em;
+            }
+            color:#5DA6D4;
+        
+        }
+    }
+}
+
+.tests-row
+{
+    padding:2vw 0;
+    >[class*='col-']{
+        margin:2vw 4vw;
+        padding:4vw;
+        background-color:#ffffff;
+        border-radius:20px;
+        @include drop-shadow(5px,5px,5px, rgba(0,0,0,0.3));
+        h2{
+            color:#2F3F4F;
+            font-family: 'Odin';
+            margin-bottom:.25rem;
+        }
+        h6{
+            color:#898989;
+            font-family:'Nunito';
+            font-weight:600;
+        }
+        span{
+            color:#5DA6D4;
+            font-family:'Odin';
+        }
+        .progress{
+            background-color:#707070;
+            border-radius:10px;
+            height:0.9em;
+            .progress-bar{
+                background-color:#E94B3E;
+            }
+        }
+    }
+}
+
+.header{
+    
+}
+
