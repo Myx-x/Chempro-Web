@@ -21,6 +21,10 @@
   padding: 3vw;
 }
 
+#j > img {
+  max-width: 100%;
+}
+
 #maintitle {
   background-color: #fefefe;
 }
