@@ -23,7 +23,7 @@
 <body>
     <div class="container-fluid padding">
         <div class="row justify-content-center">
-            <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4" id="box">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
 
                 <form class="card form-container" action="CAMCAM" method="POST">
                     <div class="text-center">
@@ -33,24 +33,41 @@
 
                     <div class="form-group">
                         <label><sp class="red">*</sp> Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required="">
                     </div>
                     
                     <div class="form-group">
                         <label><sp class="red">*</sp> Username/NIM</label>
-                        <input type="text" class="form-control" name="username" placeholder="Username/NIM" required="">
+                        <input type="text" class="form-control" id="username" placeholder="Username/NIM" required="">
                     </div>
                     
                     <div class="form-group">
                         <label><sp class="red">*</sp> Password</label>
-                        <input type="password" class="form-control" name="password" minlength="6" placeholder="Password" required="">    
+                        <input type="password" class="form-control" id="password" minlength="6" placeholder="Password" required="">    
                     </div>
             
                     <div class="form-group">
                         <label><sp class="red">*</sp> Re-type Password</label>
-                        <input type="password" class="form-control" name="re-typepassword" minlength="6" placeholder="Re-type Password" required="">    
+                        <input type="password" class="form-control" id="password2" minlength="6" placeholder="Re-type Password" required="">    
                     </div>
 
+                    <script>
+                        var password = document.getElementById("password")
+                        , password2 = document.getElementById("password2");
+
+                        function validatePassword(){
+                        if(password.value != password2.value) {
+                        
+                            password2.setCustomValidity("Passwords Don't Match");
+                            } else {
+                            password2.setCustomValidity('');
+                             }
+                            }
+
+                        password.onchange = validatePassword;
+                        confirm_password.onkeyup = validatePassword;    
+                    </script>
+                    
                     <div class="form-group form-check">
                         <input class="form-check-input" id="ceklis" type="checkbox" required="">
                         <label class="form-check-label" for="ceklis">I agree to the <a href="CAMCAM">Terms and Conditions</a><sp class="red">*</sp> </label>
