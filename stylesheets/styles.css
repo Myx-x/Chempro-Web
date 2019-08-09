@@ -53,8 +53,9 @@
 }
 
 #navbar-logo {
-  width: 75px;
+  width: 45px;
   height: auto;
+  margin: .25vw;
 }
 
 #chempro-navbar {
@@ -193,6 +194,18 @@ section {
 .odin {
   font-family: 'Odin';
   color: #2F3F4F;
+}
+
+.titleqna{
+  font-family: 'Odin';
+  color: #2F3F4F;
+  padding-top: 4vw;
+}
+
+.titlestore{
+  font-family: 'Odin';
+  color: #2F3F4F;
+  padding-top: 4vw;
 }
 
 .qna-row {
