@@ -263,4 +263,25 @@ section {
 .profil .col-md-4 h4 {
   color: #292929;
 }
+
+.titleqna {
+  font-family: "Odin";
+  padding-top: 1vw;
+  margin-bottom: -2vw;
+}
+
+.titleqna-1 {
+  font-family: "Odin";
+  margin-top: -2vw;
+  margin-bottom: -2vw;
+}
+
+.store-title {
+  font-family: "Odin";
+  padding-top: 1vw;
+}
+
+.star-color {
+  color : yellow;
+}
 /*# sourceMappingURL=styles.css.map */
