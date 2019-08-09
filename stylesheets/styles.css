@@ -53,8 +53,9 @@
 }
 
 #navbar-logo {
-  width: 75px;
+  width: 100px;
   height: auto;
+  margin: 0.25vw;
 }
 
 #chempro-navbar {
