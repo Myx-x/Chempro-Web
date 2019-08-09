@@ -25,7 +25,7 @@
             <a class="navbar-brand" href="../">
                 <img ckass="img-fluid" src="./images/logo.png" id="navbar-logo">
             </a>
-            <button class="navbar-toggler hamburger hamburger--arrow" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
+            <button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
@@ -148,22 +148,19 @@
         </section>
 
         <script>
-            // Look for .hamburger
             var hamburger = document.querySelector(".hamburger");
-            // On click
             hamburger.addEventListener("click", function() {
-                // Toggle class "is-active"
                 hamburger.classList.toggle("is-active");
-                // Do something else, like open/close menu
             });
         </script>
+        <!--Hide all section tag, show the default section(id=information)-->
         <script>
             var x = document.getElementsByTagName("section");
             for (let i = 0; i < x.length; i++) {
                 const element = x[i];
                 element.style.display = "none";
             }
-            document.getElementById("information").style.display = "block";
+            document.getElementById("qna").style.display = "block";
         </script>
     </body>
 </html>
