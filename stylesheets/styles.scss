@@ -1,217 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap");
 @font-face {
-    font-family: 'Odin';
-    src: url('../fonts/odin.eot');
-    src: url('../fonts/odin.eot') format('embedded-opentype'),
-         url('../fonts/odin.woff2') format('woff2'),
-         url('../fonts/odin.woff') format('woff'),
-         url('../fonts/odin.ttf') format('truetype'),
-         url('../fonts/odin.svg#odin') format('svg');
+  font-family: 'Odin';
+  src: url("../fonts/odin.eot");
+  src: url("../fonts/odin.eot") format("embedded-opentype"), url("../fonts/odin.woff2") format("woff2"), url("../fonts/odin.woff") format("woff"), url("../fonts/odin.ttf") format("truetype"), url("../fonts/odin.svg#odin") format("svg");
 }
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap');
-
-@mixin drop-shadow($y, $x, $blur, $color, $inset: false){
-    @if $inset{
-        -webkit-box-shadow:inset $y $x $blur $color;
-        -moz-box-shadow:inset $y $x $blur $color;
-        box-shadow:inset $y $x $blur $color;
-    }@else{
-        -webkit-box-shadow:$y $x $blur $color;
-        -moz-box-shadow:$y $x $blur $color;
-        box-shadow:$y $x $blur $color;
-    }
+.card h3 {
+  font-family: 'Odin';
 }
 
-$sm:576px;
-$md:768px;
-$lg:992px;
-$xl:1140px;
-
-//----------------------------------- Login Styling!! Yayy
-
-.card{
-    h3{
-        font-family:'Odin';
-    }
+.red {
+  color: #E94B3E;
 }
 
-.red{
-    color: #E94B3E;
+.form-group > label {
+  font-family: 'Nunito';
 }
 
-.form-group{
-    >label{
-        font-family: 'Nunito';
-    }
+.form-container {
+  padding: 3vw;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 
-.form-container{
-    padding:3vw;
-    @include drop-shadow(3px, 3px, 4px, rgba(0,0,0,0.3));
-    border-radius: 20px;
+#login-logo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
-#login-logo{
-    max-width:100%;
-    width:100%;
-    height:auto;
+#login-row {
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
-#login-row{
-    min-height: 100vh;
-    max-height: 100vh;
+#login-page {
+  background: url("../images/login_page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
-#login-page{
-    background:url("../images/login_page.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    max-height: 100vh;
+#maintitle {
+  background-color: #fefefe;
 }
 
-//-----------------------------------
-
-#maintitle{
-    background-color:#fefefe;
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+  background-color: #101010;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
-    background-color:#101010;
+#navbar-logo {
+  width: 75px;
+  height: auto;
 }
 
-#navbar-logo{
-    width: 75px;
-    height:auto;
+#chempro-navbar {
+  background-color: #e2e2e2;
+  font-family: 'Odin';
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
 
-#chempro-navbar{
-    background-color: #e2e2e2;
-    font-family: 'Odin';
-    font-size:1.5em;
-    letter-spacing:1px;
+.nav-item:hover {
+  background-color: #bbbbbb;
 }
 
-.nav-item:hover{
-    background-color:#bbbbbb;
+.nav-link {
+  color: #101010 !important;
 }
 
-.nav-link{
-    color:#101010 !important;
-
+#information, #tests, #qna {
+  background-color: #ECF0F1;
 }
 
-#information, #tests, #qna
-{
-    background-color:#ECF0F1;
+section {
+  min-height: 100vh;
 }
 
-section{
-    min-height:100vh;
+.info-row > [class*='col-'] {
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  padding: 4vw;
+  background-color: #ffffff;
+  border-radius: 20px;
 }
 
-.info-row
-{
-    //padding:10px 0;
-    >[class*='col-']{
-        @include drop-shadow(3px,3px,4px, rgba(0,0,0,0.3));
-        //margin:10px 20px;
-        padding:4vw;
-        background-color:#ffffff;
-        border-radius:20px;
-        h3{
-            color:#2F3F4F;
-            font-family: 'Odin';
-            margin-bottom:.25rem;
-        }
-        img{
-            border-radius:20px;
-        }
-        h6{
-            color:#898989;
-            font-family:'Nunito';
-            font-weight:600;
-        }
-        .see-more{
-            span{
-                font-family:'Odin';
-            }
-            i{
-                font-size:1.2em;
-            }
-            color:#5DA6D4;
-        
-        }
-    }
+.info-row > [class*='col-'] h3 {
+  color: #2F3F4F;
+  font-family: 'Odin';
+  margin-bottom: .25rem;
 }
 
-.tests-row
-{
-    padding:2vw 0;
-    >[class*='col-']{
-        margin:2vw 4vw;
-        padding:4vw;
-        background-color:#ffffff;
-        border-radius:20px;
-        @include drop-shadow(5px,5px,5px, rgba(0,0,0,0.3));
-        h2{
-            color:#2F3F4F;
-            font-family: 'Odin';
-            margin-bottom:.25rem;
-        }
-        h6{
-            color:#898989;
-            font-family:'Nunito';
-            font-weight:600;
-        }
-        span{
-            color:#5DA6D4;
-            font-family:'Odin';
-        }
-        .progress{
-            background-color:#707070;
-            border-radius:10px;
-            height:0.9em;
-            .progress-bar{
-                background-color:#E94B3E;
-            }
-        }
-    }
+.info-row > [class*='col-'] img {
+  border-radius: 20px;
+}
+
+.info-row > [class*='col-'] h6 {
+  color: #898989;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.info-row > [class*='col-'] .see-more {
+  color: #5DA6D4;
+}
+
+.info-row > [class*='col-'] .see-more span {
+  font-family: 'Odin';
+}
+
+.info-row > [class*='col-'] .see-more i {
+  font-size: 1.2em;
 }
 
 .tests-row {
-    padding: 2vw 0;
-  
-  > [class*='col-'] {
-        margin: 2vw 4vw;
-        padding: 4vw;
-        background-color: #ffffff;
-        border-radius: 20px;
-        -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        h2 {
-            color: #2F3F4F;
-            font-family: 'Odin';
-            margin-bottom: .25rem;
-        }
-        span {
-            color: #5DA6D4;
-            font-family: 'Odin';
-        }
-        .progress {
-            background-color: #707070;
-            border-radius: 10px;
-            height: 0.9em;
-            .progress-bar {
-                background-color: #E94B3E;
-            }
-        }
-    }
+  padding: 2vw 0;
 }
+
+.tests-row > [class*='col-'] {
+  margin: 2vw 4vw;
+  padding: 4vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tests-row > [class*='col-'] h2 {
+  color: #2F3F4F;
+  font-family: 'Odin';
+  margin-bottom: .25rem;
+}
+
+.tests-row > [class*='col-'] h6 {
+  color: #898989;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.tests-row > [class*='col-'] span {
+  color: #5DA6D4;
+  font-family: 'Odin';
+}
+
+.tests-row > [class*='col-'] .progress {
+  background-color: #707070;
+  border-radius: 10px;
+  height: 0.9em;
+}
+
+.tests-row > [class*='col-'] .progress .progress-bar {
+  background-color: #E94B3E;
+}
+
+.tests-row {
+  padding: 2vw 0;
+}
+
+.tests-row > [class*='col-'] {
+  margin: 2vw 4vw;
+  padding: 4vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tests-row > [class*='col-'] h2 {
+  color: #2F3F4F;
+  font-family: 'Odin';
+  margin-bottom: .25rem;
+}
+
+.tests-row > [class*='col-'] span {
+  color: #5DA6D4;
+  font-family: 'Odin';
+}
+
+.tests-row > [class*='col-'] .progress {
+  background-color: #707070;
+  border-radius: 10px;
+  height: 0.9em;
+}
+
+.tests-row > [class*='col-'] .progress .progress-bar {
+  background-color: #E94B3E;
+}
+
 .odin {
-    font-family: 'Odin';
-    color: #2F3F4F;
+  font-family: 'Odin';
+  color: #2F3F4F;
 }
 
+.qna-row {
+  padding: 2vw 0;
+}
 
+.qna-row > [class*='col-'] {
+  margin: 2vw 4vw;
+  padding: 4vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.qna-row > [class*='col-'] h2 {
+  color: #2F3F4F;
+  font-family: 'Odin';
+  margin-bottom: .25rem;
+}
+
+.qna-row > [class*='col-'] h6 {
+  color: #898989;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.qna-row > [class*='col-'] span {
+  color: #5DA6D4;
+  font-family: 'Odin';
+}
+
+.store-row {
+  padding: 0 0;
+}
+
+.store-row > [class*='col-'] {
+  margin: 2vw 4vw;
+  padding: 10px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.store-name {
+  text-align: left;
+  margin: 5px;
+}
+
+.price {
+  color:rgb(44, 143, 156);
+}
+
+/*# sourceMappingURL=styles.css.map */
