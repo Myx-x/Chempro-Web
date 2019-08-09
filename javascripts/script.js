@@ -11,10 +11,11 @@ function toggleSection(sectionName){
 }
 
 
-function showItemPage(name)
+function showItemPage(name,price)
 {
     toggleSection("store-more");
     document.getElementById("store-title").innerHTML = name;
+    document.getElementById("store-price").innerHTML = price;
     
     var imageDir='./images/';
     imageDir+=(name+'.jpg');
