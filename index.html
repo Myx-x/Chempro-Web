@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Chempro</title>
 
@@ -8,11 +9,18 @@
     <meta name="description" content="Chempro">
     <meta name="keywords" content="Chempro">
     <meta name="author" content="MK">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2deb3c3ae0.js"></script>
     <script src="./javascripts/script.js"></script>
 
@@ -22,270 +30,274 @@
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 
-    </head>
-    <body>
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-md sticky-top" id="chempro-navbar">
-            <a class="navbar-brand" href="../">
-                <img class="img-fluid" src="./images/logo nav.png" id="navbar-logo">
-            </a>
-            <button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsible-navbar">
-                <ul class="navbar-nav text-right">
-                    <li class="nav-item">
-                        <a class="nav-link py-0" href="#" onclick="toggleSection('information')">Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-0" href="#" onclick="toggleSection('tests')">Tests</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-0" href="#" onclick="toggleSection('qna')">QnA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-0" href="#" onclick="toggleSection('store')">Store</a>
-                    </li>    
-                    <li class="nav-item">
-                        <a class="nav-link py-0" href="#" onclick="toggleSection('profile')">My Profile</a>
-                    </li>    
-                </ul>
-            </div>
-        </nav>
-        <!-- end Nav Bar -->
+</head>
 
-        <!-- Information -->
-        <section id="information">
-            <div class="container">
-                <div class="row justify-content-center info-row text-center content-margin">
-                    <div class="col-sm-10 col-md-6 col-lg-6 m-2">
-                        <h3>Jadwal Ujian Kimia IA</h3>
-                        <h6>Berikut ini adalah jadwal untuk Kimia IA!</h6>
-                        <div class="see-more">
-                            <span>See more</span><br>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-md-6 col-lg-6 m-2">
-                        <h3>Jadwal Ujian Kimia IB</h3>
-                        <h6>Berikut ini adalah jadwal untuk Kimia IB!</h6>
-                        <div class="see-more">
-                            <span>See more</span><br>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-md-6 col-lg-6 m-2">
-                        <h3>Fun Fact Pisang Goreng</h3>
-                        <h6>Ternyata pisang goreng ada khasiatnya loh!</h6>
-                        <img src="./images/pisang.jpg" class="img-fluid">
-                        <div class="see-more">
-                            <span>See more</span><br>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-md-6 col-lg-6 m-2">
-                        <h3>Pisang : Buah paling berbahaya di bumi</h3>
-                        <h6>Ternyata pisang itu berbahaya loh gais, kalo digoreng gimana?</h6>
-                        <img src="./images/pisang.jpg" class="img-fluid">
-                        <div class="see-more">
-                            <span>See more</span><br>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end Information -->
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md sticky-top" id="chempro-navbar">
+        <a class="navbar-brand" href="../">
+            <img class="img-fluid" src="./images/logo nav.png" id="navbar-logo">
+        </a>
+        <button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse"
+            data-target="#collapsible-navbar">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsible-navbar">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('information')">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('tests')">Tests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('qna')">QnA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('store')">Store</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <i class="fas fa-user mr-1"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('profile')">My Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end Nav Bar -->
 
-        <!-- Tests -->
-        <section id="tests">
-            <div class="container">
-                <div class="row justify-content-center tests-row text-center">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <h2>TO Ujian Kimia IA</h2>
-                            <div class="progress m-3">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;"></div>
-                            </div>
-                            <h6>75% mastered</h6>
-                            <span>2 Days Left</span>
+    <!-- Information -->
+    <section id="information">
+        <div class="container">
+            <div class="row justify-content-center info-row text-center content-margin">
+                <div class="col-sm-10 col-md-6 col-lg-6 m-2">
+                    <h3>Jadwal Ujian Kimia IA</h3>
+                    <h6>Berikut ini adalah jadwal untuk Kimia IA!</h6>
+                    <div class="see-more">
+                        <span>See more</span><br>
+                        <i class="fas fa-arrow-down"></i>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <h2>TO Ujian Kimia IB</h2>
-                            <div class="progress m-3">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width:68%;"></div>
-                            </div>
-                            <h6>68% mastered</h6>
-                            <span>2 Days Left</span>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-6 m-2">
+                    <h3>Jadwal Ujian Kimia IB</h3>
+                    <h6>Berikut ini adalah jadwal untuk Kimia IB!</h6>
+                    <div class="see-more">
+                        <span>See more</span><br>
+                        <i class="fas fa-arrow-down"></i>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <h2>Latihan Quiz</h2>
-                            <div class="progress m-3">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%;"></div>
-                            </div>
-                            <h6>25% mastered</h6>
-                            <span>1 Week Left</span>
-                    </div> 
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-6 m-2">
+                    <h3>Fun Fact Pisang Goreng</h3>
+                    <h6>Ternyata pisang goreng ada khasiatnya loh!</h6>
+                    <img src="./images/pisang.jpg" class="img-fluid">
+                    <div class="see-more">
+                        <span>See more</span><br>
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-6 m-2">
+                    <h3>Pisang : Buah paling berbahaya di bumi</h3>
+                    <h6>Ternyata pisang itu berbahaya loh gais, kalo digoreng gimana?</h6>
+                    <img src="./images/pisang.jpg" class="img-fluid">
+                    <div class="see-more">
+                        <span>See more</span><br>
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- end Tests -->
+        </div>
+    </section>
+    <!-- end Information -->
 
-        <!-- QNA -->
-        <section id="qna">
-			<div class="container">
-                <h2 class="titleqna">Top Questions</h2>
-                <div class="row justify-content-left qna-row text-left content-margin-1">
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <h2>Ini soal Kimia 1</h2>
-                            <h6>5 solutions</h6>
+    <!-- Tests -->
+    <section id="tests">
+        <div class="container">
+            <div class="row justify-content-center tests-row text-center">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h2>TO Ujian Kimia IA</h2>
+                    <div class="progress m-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width:75%;"></div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <h2>Ini soal Kimia 2</h2>
-                            <h6>2 solutions</h6>
-                    </div>
+                    <h6>75% mastered</h6>
+                    <span>2 Days Left</span>
                 </div>
-                <h2 class="titleqna-1">Recent Questions</h2>
-                <div class="row justify-content-left qna-row text-left content-margin-1">
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <h2>Ini pertanyaan tentang kuliah</h2>
-                            <h6>10 solutions</h6>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h2>TO Ujian Kimia IB</h2>
+                    <div class="progress m-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0"
+                            aria-valuemax="100" style="width:68%;"></div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <h2>Ini pertanyaan tentang buku</h2>
-                            <h6>23 solutions</h6>
-                    </div>
+                    <h6>68% mastered</h6>
+                    <span>2 Days Left</span>
                 </div>
-        </section>
-        <!-- end QNA -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h2>Latihan Quiz</h2>
+                    <div class="progress m-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100" style="width:25%;"></div>
+                    </div>
+                    <h6>25% mastered</h6>
+                    <span>1 Week Left</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Tests -->
 
-        <!-- Store -->
-        <section id="store">
-            <div class="container">
-                <h2 class="store-title">Store</h2>
-                <div class="row store-row text-center">
-                    <div class="col-sm-6 col-md-4 col-lg-2">
-                        <a onclick="showItemPage('Buku', 'Rp 40k');" href="#">
-                            <img src="./images/Buku.jpg" alt="Buku Chempro" width="100%" height="100%">
-                            <h4 class="odin text-left store-name">Buku Chempro</h4>
-                            <h5 class="odin text-left store-name price">Rp 40k</h5>
-                            <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2">
-                        <a onclick="showItemPage('Jas', 'Rp 40k');" href="#">
-                            <img src="./images/Jas.jpg" alt="Jas Lab" width="100%" height="100%">
-                            <h4 class="odin text-left store-name">Jas Lab</h4>
-                            <h5 class="odin text-left store-name price">Rp 40k</h5>
-                            <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2">
-                        <a onclick="showItemPage('Masker', 'Rp 5k');" href="#">    
-                            <img src="./images/Masker.jpg" alt="Masker" width="100%" height="100%">
-                            <h4 class="odin text-left store-name">Masker</h4>
-                            <h5 class="odin text-left store-name price">Rp 5k</h5>
-                            <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
-                        </a>
-                    </div>
-                     <div class="col-sm-6 col-md-4 col-lg-2">
-                        <a onclick="showItemPage('Goggles', 'Rp 15k');" href="#">    
-                            <img src="./images/goggles.jpg" alt="Goggles" width="100%" height="100%">
-                            <h4 class="odin text-left store-name">Goggles</h4>
-                            <h5 class="odin text-left store-name price">Rp 15k</h5>
-                            <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2">
-                        <a onclick="showItemPage('Nametag', 'Rp 3k');" href="#">
-                            <img src="./images/nametag.jpg" alt="Nametag" width="100%" height="100%">
-                            <h4 class="odin text-left store-name">Nametag</h4>
-                            <h5 class="odin text-left store-name price">Rp 3k</h5>
-                            <h5 class="text-right odin">4.5<i class="fas fa-star star-color"></i></h5>
-                        </a>
-                    </div>
+    <!-- QNA -->
+    <section id="qna">
+        <div class="container">
+            <h2 class="titleqna">Top Questions</h2>
+            <div class="row justify-content-left qna-row text-left content-margin-1">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <h2>Ini soal Kimia 1</h2>
+                    <h6>5 solutions</h6>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <h2>Ini soal Kimia 2</h2>
+                    <h6>2 solutions</h6>
                 </div>
             </div>
-        </section>
-        <!-- Store More -->
-        <section id="store-more">
-            <div class="container">
-                <div class="text-center">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h1 id="store-title"></h1>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <img id="store-image">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h1 id="store-price"></h1>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <br><br>
-                        <h1>"Buy Button"</h1>
-                    </div>
+            <h2 class="titleqna-1">Recent Questions</h2>
+            <div class="row justify-content-left qna-row text-left content-margin-1">
+                <div class="col-sm-6 col-md-4 col-lg-6">
+                    <h2>Ini pertanyaan tentang kuliah</h2>
+                    <h6>10 solutions</h6>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6">
+                    <h2>Ini pertanyaan tentang buku</h2>
+                    <h6>23 solutions</h6>
                 </div>
             </div>
-        </section>
-        <section id="profile">
-            <div class="profil container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 text-center">
-                        <h2>Profil</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img src="./images/profile-photo.jpg" alt="" class="img-thumbnail">
-                        <table style="width:100%">
-                            <tr>
-                                <th>Nama :</th>
-                                <th>Nama Anda</th> 
-                            </tr>
-                            <tr>
-                                <td>Username :</td>
-                                <td>16518331</td> 
-                            </tr>
-                            <tr>
-                                <td>Email :</td>
-                                <td>namaanda@gmail.com</td> 
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end Store -->
+    </section>
+    <!-- end QNA -->
 
-        <!-- Footer -->
-        <footer>
-            <div class="odin container text-center">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p><i class="glyphicon glyphicon-copyright-mark"></i> copyright 2019 | built by Integers</a></p>
-                    </div>
+    <!-- Store -->
+    <section id="store">
+        <div class="container">
+            <h2 class="store-title">Store</h2>
+            <div class="row store-row text-center">
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a onclick="showItemPage('Buku', 'Rp 40k');" href="#">
+                        <img src="./images/Buku.jpg" alt="Buku Chempro" width="100%" height="100%">
+                        <h4 class="odin text-left store-name">Buku Chempro</h4>
+                        <h5 class="odin text-left store-name price">Rp 40k</h5>
+                        <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a onclick="showItemPage('Jas', 'Rp 40k');" href="#">
+                        <img src="./images/Jas.jpg" alt="Jas Lab" width="100%" height="100%">
+                        <h4 class="odin text-left store-name">Jas Lab</h4>
+                        <h5 class="odin text-left store-name price">Rp 40k</h5>
+                        <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a onclick="showItemPage('Masker', 'Rp 5k');" href="#">
+                        <img src="./images/Masker.jpg" alt="Masker" width="100%" height="100%">
+                        <h4 class="odin text-left store-name">Masker</h4>
+                        <h5 class="odin text-left store-name price">Rp 5k</h5>
+                        <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a onclick="showItemPage('Goggles', 'Rp 15k');" href="#">
+                        <img src="./images/goggles.jpg" alt="Goggles" width="100%" height="100%">
+                        <h4 class="odin text-left store-name">Goggles</h4>
+                        <h5 class="odin text-left store-name price">Rp 15k</h5>
+                        <h5 class="text-right odin">5<i class="fas fa-star star-color"></i></h5>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a onclick="showItemPage('Nametag', 'Rp 3k');" href="#">
+                        <img src="./images/nametag.jpg" alt="Nametag" width="100%" height="100%">
+                        <h4 class="odin text-left store-name">Nametag</h4>
+                        <h5 class="odin text-left store-name price">Rp 3k</h5>
+                        <h5 class="text-right odin">4.5<i class="fas fa-star star-color"></i></h5>
+                    </a>
                 </div>
             </div>
-        </footer>
-        <!-- end Footer -->
+        </div>
+    </section>
+    <!-- Store More -->
+    <section id="store-more">
+        <div class="container">
+            <div class="text-center">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <h1 id="store-title"></h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12">
+                    <img id="store-image">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12">
+                    <h1 id="store-price"></h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12">
+                    <br><br>
+                    <h1>"Buy Button"</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Store -->
 
-        <!-- JavaScript -->
-        <script>
-            var hamburger = document.querySelector(".hamburger");
-            hamburger.addEventListener("click", function() {
-                hamburger.classList.toggle("is-active");
-            });
-        </script>
-        <!--Hide all section tag, show the default section(id=information)-->
-        <script>
-            var x = document.getElementsByTagName("section");
-            for (let i = 0; i < x.length; i++) {
-                const element = x[i];
-                element.style.display = "none";
-            }
-            document.getElementById("information").style.display = "block";
-        </script>
-        <!-- end JavaScript -->
-    </body>
+    <!-- Profile -->
+    <section id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Profil</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 my-4 text-center"><img src="./images/profile-photo.jpg" alt="" class="rounded"></div>
+            </div>
+            <div class="row">
+                <div class="offset-md-2 col-md-4 text-right"><p>Nama :</p></div> 
+                <div class="col-md-4" text-left><p>Nama Anda</p></div>   
+            </div>
+            <div class="row">
+                <div class="offset-md-2 col-md-4 text-right"><p>Username :</p></div> 
+                <div class="col-md-4" text-left><p>16518331</p></div>   
+            </div>            
+        </div>
+    </section>
+    <!-- end Profile -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center odin">
+            <div class="row">
+                <div class="col-sm-12"><p>&copy copyright 2019 | built with <i class="fas fa-heart"></i> by Integers</a></p></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- JavaScript -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
+    <!--Hide all section tag, show the default section(id=information)-->
+    <script>
+        var x = document.getElementsByTagName("section");
+        for (let i = 0; i < x.length; i++) {
+            const element = x[i];
+            element.style.display = "none";
+        }
+        document.getElementById("information").style.display = "block";
+    </script>
+    <!-- end JavaScript -->
+</body>
+
 </html>

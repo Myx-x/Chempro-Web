@@ -5,6 +5,14 @@
   src: url("../fonts/odin.eot") format("embedded-opentype"), url("../fonts/odin.woff2") format("woff2"), url("../fonts/odin.woff") format("woff"), url("../fonts/odin.ttf") format("truetype"), url("../fonts/odin.svg#odin") format("svg");
 }
 
+html {
+  position: relative;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
 .card h3 {
   font-family: 'Odin';
 }
@@ -248,20 +256,13 @@ section {
   color: #2c8f9c;
 }
 
-.profil {
-  padding-top: 25px;
+#profile {
+  font-family: 'Odin';
+  font-size: 0.7cm;
 }
 
-.profil img {
-  height: 200px;
-}
-
-.profil h4 {
-  color: #0152ff;
-}
-
-.profil .col-md-4 h4 {
-  color: #292929;
+#profile img {
+  width: 200px;
 }
 
 #store-more .text-center h1 {
@@ -271,5 +272,19 @@ section {
 #store-more .text-center img {
   width: 200px;
   height: auto;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #333;
+	padding-top: 30px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 0.9;
 }
 /*# sourceMappingURL=styles.css.map */
