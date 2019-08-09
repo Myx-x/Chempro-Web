@@ -5,6 +5,19 @@
   src: url("../fonts/odin.eot") format("embedded-opentype"), url("../fonts/odin.woff2") format("woff2"), url("../fonts/odin.woff") format("woff"), url("../fonts/odin.ttf") format("truetype"), url("../fonts/odin.svg#odin") format("svg");
 }
 
+html {
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  margin-bottom: 100px;
+}
+
+.container {
+  font-family: 'Odin';
+}
+
 .card h3 {
   font-family: 'Odin';
 }
@@ -65,19 +78,35 @@
 }
 
 .nav-item:hover {
-  background-color: #bbbbbb;
+  background-color: lightblue;
 }
 
 .nav-link {
   color: #101010 !important;
 }
 
-#information, #tests {
+#information, #tests, #qna {
   background-color: #ECF0F1;
 }
 
 section {
   min-height: 100vh;
+}
+
+.profil {
+  padding-top: 25px;
+}
+
+.profil img {
+  height: 200px;
+}
+
+.profil h4 {
+  color: #0152ff;
+}
+
+.profil .col-md-4 h4 {
+  color: #292929;
 }
 
 .info-row > [class*='col-'] {
@@ -156,7 +185,72 @@ section {
   background-color: #E94B3E;
 }
 
+.tests-row {
+  padding: 2vw 0;
+}
+
+.tests-row > [class*='col-'] {
+  margin: 2vw 4vw;
+  padding: 4vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tests-row > [class*='col-'] h2 {
+  color: #2F3F4F;
+  font-family: 'Odin';
+  margin-bottom: .25rem;
+}
+
+.tests-row > [class*='col-'] span {
+  color: #5DA6D4;
+  font-family: 'Odin';
+}
+
+.tests-row > [class*='col-'] .progress {
+  background-color: #707070;
+  border-radius: 10px;
+  height: 0.9em;
+}
+
+.tests-row > [class*='col-'] .progress .progress-bar {
+  background-color: #E94B3E;
+}
+
 .odin {
+  font-family: 'Odin';
+  color: #2F3F4F;
+}
+
+.qna-row {
+  padding: 2vw 0;
+}
+
+.qna-row > [class*='col-'] {
+  margin: 2vw 4vw;
+  padding: 4vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.qna-row > [class*='col-'] h2 {
+  color: #2F3F4F;
+  font-family: 'Odin';
+  margin-bottom: .25rem;
+}
+
+.qna-row > [class*='col-'] h6 {
+  color: #898989;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.qna-row > [class*='col-'] span {
+  color: #5DA6D4;
   font-family: 'Odin';
 }
 
@@ -190,6 +284,20 @@ section {
 .fa-star {
   color: yellow;
   font-size:20px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #c0bebe;
+	padding-top: 30px;
+}
+
+footer p {
+	color: rgb(12, 12, 12);
+	font-size: 0.9;
 }
 
 /*# sourceMappingURL=styles.css.map */

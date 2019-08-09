@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chempro</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chempro">
+    <meta name="keywords" content="Chempro">
+    <meta name="author" content="MK">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2deb3c3ae0.js"></script>
+    <script src="./javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheets/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md sticky-top" id="chempro-navbar">
+        <a class="navbar-brand" href="../">
+            <img ckass="img-fluid" src="./images/logo.png" id="navbar-logo">
+        </a>
+        <button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse"
+            data-target="#collapsible-navbar">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsible-navbar">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('information')">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('tests')">Tests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('qna')">QnA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#" onclick="toggleSection('store')">Store</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex text-right">
+                <li><i class="fas fa-user"></i></li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#"><i class="glyphicon glyphicon-user"></i> Nama Anda</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- end Nav Bar -->
+
+    <!-- Profil -->
+    <div class="profil container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Profil</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./images/profile-photo.jpg" alt="" class="img-thumbnail">
+                <table style="width:100%">
+                    <tr>
+                        <th>Nama :</th>
+                        <th>Nama Anda</th> 
+                    </tr>
+                    <tr>
+                        <td>Username :</td>
+                        <td>16518331</td> 
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td>namaanda@gmail.com</td> 
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- end Profil -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center odin">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p></i> copyright 2019 | built by Integers</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- JavaScript -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
+    <!--Hide all section tag, show the default section(id=information)-->
+    <script>
+        var x = document.getElementsByTagName("section");
+        for (let i = 0; i < x.length; i++) {
+            const element = x[i];
+            element.style.display = "none";
+        }
+        document.getElementById("qna").style.display = "block";
+    </script>
+    <!-- end JavaScript -->
+</body>
+
+</html>
