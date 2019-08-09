@@ -5,20 +5,6 @@
   src: url("../fonts/odin.eot") format("embedded-opentype"), url("../fonts/odin.woff2") format("woff2"), url("../fonts/odin.woff") format("woff"), url("../fonts/odin.ttf") format("truetype"), url("../fonts/odin.svg#odin") format("svg");
 }
 
-html {
-  position: relative;
-}
-
-body {
-  min-height: 100vh;
-  margin-bottom: 100px;
-}
-
-.container {
-  font-family: 'Odin';
-}
-
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 .card h3 {
   font-family: 'Odin';
 }
@@ -67,9 +53,8 @@ body {
 }
 
 #navbar-logo {
-  width: 45px;
+  width: 75px;
   height: auto;
-  margin: .25vw;
 }
 
 #chempro-navbar {
@@ -80,7 +65,7 @@ body {
 }
 
 .nav-item:hover {
-  background-color: lightblue;
+  background-color: #bbbbbb;
 }
 
 .nav-link {
@@ -93,22 +78,6 @@ body {
 
 section {
   min-height: 100vh;
-}
-
-.profil {
-  padding-top: 25px;
-}
-
-.profil img {
-  height: 200px;
-}
-
-.profil h4 {
-  color: #0152ff;
-}
-
-.profil .col-md-4 h4 {
-  color: #292929;
 }
 
 .info-row > [class*='col-'] {
@@ -226,18 +195,6 @@ section {
   color: #2F3F4F;
 }
 
-.titleqna{
-  font-family: 'Odin';
-  color: #2F3F4F;
-  padding-top: 2vw;
-}
-
-.titlestore{
-  font-family: 'Odin';
-  color: #2F3F4F;
-  padding-top: 2vw;
-}
-
 .qna-row {
   padding: 2vw 0;
 }
@@ -282,48 +239,28 @@ section {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.store-row p {
-  font-size: 24px;
-}
-
 .store-name {
   text-align: left;
   margin: 5px;
 }
 
 .price {
-  color:rgb(44, 143, 156);
+  color: #2c8f9c;
 }
 
-.fa-star {
-  color: yellow;
-  font-size:20px;
+.profil {
+  padding-top: 25px;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	background-color: #c0bebe;
-	padding-top: 30px;
+.profil img {
+  height: 200px;
 }
 
-footer p {
-	color: rgb(12, 12, 12);
-	font-size: 0.9;
+.profil h4 {
+  color: #0152ff;
 }
 
-.content-margin {
-  padding-top : 2vw;
-}
-
-.content-margin-1 {
-  margin-top: -2.5vw;
-}
-
-.star-color {
- color: rgba(255, 174, 0, 0.993);
- float: right;
+.profil .col-md-4 h4 {
+  color: #292929;
 }
 /*# sourceMappingURL=styles.css.map */
