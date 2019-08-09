@@ -155,4 +155,8 @@ section {
 .tests-row > [class*='col-'] .progress .progress-bar {
   background-color: #E94B3E;
 }
+
+.odin {
+  font-family: 'Odin';
+}
 /*# sourceMappingURL=styles.css.map */
