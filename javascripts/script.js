@@ -9,3 +9,15 @@ function toggleSection(sectionName){
     var section = document.getElementById(sectionName);
     section.style.display = "block";
 }
+
+
+function showItemPage(name)
+{
+    toggleSection("store-more");
+    document.getElementById("store-title").innerHTML = name;
+    
+    var imageDir='./images/';
+    imageDir+=(name+'.jpg');
+    document.getElementById("store-image").setAttribute("src", imageDir);
+
+}
