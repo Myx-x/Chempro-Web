@@ -5,6 +5,7 @@
   src: url("../fonts/odin.eot") format("embedded-opentype"), url("../fonts/odin.woff2") format("woff2"), url("../fonts/odin.woff") format("woff"), url("../fonts/odin.ttf") format("truetype"), url("../fonts/odin.svg#odin") format("svg");
 }
 
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 .card h3 {
   font-family: 'Odin';
 }
@@ -53,8 +54,9 @@
 }
 
 #navbar-logo {
-  width: 75px;
+  width: 45px;
   height: auto;
+  margin: .25vw;
 }
 
 #chempro-navbar {
@@ -195,6 +197,18 @@ section {
   color: #2F3F4F;
 }
 
+.titleqna{
+  font-family: 'Odin';
+  color: #2F3F4F;
+  padding-top: 2vw;
+}
+
+.titlestore{
+  font-family: 'Odin';
+  color: #2F3F4F;
+  padding-top: 2vw;
+}
+
 .qna-row {
   padding: 2vw 0;
 }
@@ -248,4 +262,16 @@ section {
   color:rgb(44, 143, 156);
 }
 
+.content-margin {
+  padding-top : 2vw;
+}
+
+.content-margin-1 {
+  margin-top: -2.5vw;
+}
+
+.star-color {
+ color: rgba(255, 174, 0, 0.993);
+ float: right;
+}
 /*# sourceMappingURL=styles.css.map */
