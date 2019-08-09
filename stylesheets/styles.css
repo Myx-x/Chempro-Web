@@ -268,10 +268,31 @@ section {
 #store-more .text-center h1 {
   font-family: 'Odin';
 }
-
+  
 #store-more .text-center img {
-  width: 200px;
-  height: auto;
+    width: 200px;
+    height: auto;
+}
+
+.titleqna {
+  font-family: "Odin";
+  padding-top: 1vw;
+  margin-bottom: -2vw;
+}
+
+.titleqna-1 {
+  font-family: "Odin";
+  margin-top: -2vw;
+  margin-bottom: -2vw;
+}
+
+.store-title {
+  font-family: "Odin";
+  padding-top: 1vw;
+}
+
+.star-color {
+  color : yellow;
 }
 
 footer {
